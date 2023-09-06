@@ -1,0 +1,30 @@
+.fantasy-gallery {
+  .fantasy__1 {
+    background-image: url("../../media/galleries/photo/fantasy/thumb/1.jpg");
+  }
+  .fantasy__2 {
+    background-image: url("../../media/galleries/photo/fantasy/thumb/2.jpg");
+  }
+  .fantasy__3 {
+    background-image: url("../../media/galleries/photo/fantasy/thumb/3.jpg");
+  }
+  .fantasy__4 {
+    background-image: url("../../media/galleries/photo/fantasy/thumb/4.jpg");
+  }
+  .fantasy__5 {
+    background-image: url("../../media/galleries/photo/fantasy/thumb/5.jpg");
+  }
+  .fantasy__6 {
+    background-image: url("../../media/galleries/photo/fantasy/thumb/6.jpg");
+  }
+  .fantasy__7 {
+    background-image: url("../../media/galleries/photo/fantasy/thumb/7.jpg");
+  }
+  .fantasy__8 {
+    background-image: url("../../media/galleries/photo/fantasy/thumb/8.jpg");
+  }
+
+  &.hidden {
+    display: none;
+  }
+}

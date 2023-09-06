@@ -1,0 +1,17 @@
+.photo-gallery__row__item {
+  width: 50%;
+  height: 100%;
+  position: relative;
+}
+
+.photo-gallery__row__item-photo {
+  cursor: pointer;
+  background-position: center;
+  background-size: cover;
+  transition: all 0.5s ease-out;
+  filter: saturate(0);
+
+  &:hover {
+    filter: saturate(1);
+  }
+}

@@ -1,0 +1,30 @@
+.mobile-photo {
+  width: 100%;
+  height: 80vh;
+  position: absolute;
+  top: 0;
+  left: 0;
+  transition: opacity 0.2s ease-in;
+
+  &.hidden {
+    display: none;
+    pointer-events: none;
+  }
+
+  @media (mmin-width: 974px) {
+    display: none;
+  }
+
+  &__header {
+    color: var(--prime-color);
+    font-size: 50px;
+    font-weight: 600;
+    padding-top: 20px;
+    text-align: center;
+  }
+
+  &__gallery {
+    height: 93%;
+    padding-top: 12px;
+  }
+}

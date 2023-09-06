@@ -1,0 +1,36 @@
+.photo-gallery__row__item {
+  p {
+    position: absolute;
+    font-size: 18px;
+    font-weight: 100;
+    top: 50%;
+    left: 6%;
+    width: 80%;
+    transform: translateY(-50%);
+
+    @media (max-width: 1200px) {
+      & {
+        font-size: 14px;
+      }
+    }
+  }
+
+  span {
+    font-weight: 900;
+    font-size: 80px;
+    color: var(--text-color-transparent);
+    position: absolute;
+    bottom: 2%;
+    right: 3%;
+
+    @media (max-width: 1200px) {
+      & {
+        font-size: 60px;
+      }
+    }
+  }
+
+  &.web-text {
+    direction: ltr;
+  }
+}

@@ -1,0 +1,54 @@
+.art-gallery {
+  .art__1 {
+    background-image: url("../../media/galleries/photo/art/thumb/1.jpg");
+  }
+  .art__2 {
+    background-image: url("../../media/galleries/photo/art/thumb/2.jpg");
+  }
+  .art__3 {
+    background-image: url("../../media/galleries/photo/art/thumb/3.jpg");
+  }
+  .art__4 {
+    background-image: url("../../media/galleries/photo/art/thumb/4.jpg");
+  }
+  .art__5 {
+    background-image: url("../../media/galleries/photo/art/thumb/5.jpg");
+  }
+  .art__6 {
+    background-image: url("../../media/galleries/photo/art/thumb/6.jpg");
+  }
+  .art__7 {
+    background-image: url("../../media/galleries/photo/art/thumb/7.jpg");
+  }
+  .art__8 {
+    background-image: url("../../media/galleries/photo/art/thumb/8.jpg");
+  }
+  .art__9 {
+    background-image: url("../../media/galleries/photo/art/thumb/9.jpg");
+  }
+  .art__10 {
+    background-image: url("../../media/galleries/photo/art/thumb/10.jpg");
+  }
+  .art__11 {
+    background-image: url("../../media/galleries/photo/art/thumb/11.jpg");
+  }
+  .art__12 {
+    background-image: url("../../media/galleries/photo/art/thumb/12.jpg");
+  }
+  .art__13 {
+    background-image: url("../../media/galleries/photo/art/thumb/13.jpg");
+  }
+  .art__14 {
+    background-image: url("../../media/galleries/photo/art/thumb/14.jpg");
+  }
+  .art__15 {
+    background-image: url("../../media/galleries/photo/art/thumb/15.jpg");
+  }
+  .art__16 {
+    background-image: url("../../media/galleries/photo/art/thumb/16.jpg");
+  }
+
+  &.hidden {
+    display: none;
+  }
+}

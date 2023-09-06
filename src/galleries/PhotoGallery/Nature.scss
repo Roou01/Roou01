@@ -1,0 +1,36 @@
+.nature-gallery {
+  .nature__1 {
+    background-image: url("../../media/galleries/photo/nature/thumb/1.jpg");
+  }
+  .nature__2 {
+    background-image: url("../../media/galleries/photo/nature/thumb/2.jpg");
+  }
+  .nature__3 {
+    background-image: url("../../media/galleries/photo/nature/thumb/3.jpg");
+  }
+  .nature__4 {
+    background-image: url("../../media/galleries/photo/nature/thumb/4.jpg");
+  }
+  .nature__5 {
+    background-image: url("../../media/galleries/photo/nature/thumb/5.jpg");
+  }
+  .nature__6 {
+    background-image: url("../../media/galleries/photo/nature/thumb/6.jpg");
+  }
+  .nature__7 {
+    background-image: url("../../media/galleries/photo/nature/thumb/7.jpg");
+  }
+  .nature__8 {
+    background-image: url("../../media/galleries/photo/nature/thumb/8.jpg");
+  }
+  .nature__9 {
+    background-image: url("../../media/galleries/photo/nature/thumb/9.jpg");
+  }
+  .nature__10 {
+    background-image: url("../../media/galleries/photo/nature/thumb/10.jpg");
+  }
+
+  &.hidden {
+    display: none;
+  }
+}

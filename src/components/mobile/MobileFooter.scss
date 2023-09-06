@@ -1,0 +1,272 @@
+.mobile-footer {
+  height: 90px;
+  width: 100%;
+  position: relative;
+
+  @media (min-width: 820px) {
+    height: 130px;
+  }
+
+  @media (min-width: 414px) {
+    height: 130px;
+  }
+
+  @media (min-width: 974px) {
+    display: none;
+  }
+
+  .mobile-left-btn {
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 130px;
+    height: 80%;
+    background-image: url("../../media/mobile-left-btn.png");
+    background-position: left;
+    background-repeat: no-repeat;
+    background-size: contain;
+    animation: showMobLeftBtn 1s ease-out;
+    z-index: 1;
+
+    @media (min-width: 414px) {
+      width: 150px;
+      height: 100%;
+      background-size: cover;
+      background-position: right;
+    }
+
+    &.menu-active path {
+      fill: var(--prime-color);
+    }
+
+    svg {
+      position: absolute;
+      left: 25px;
+      bottom: 15px;
+      animation: showIco 2s ease-out;
+
+      @media (min-width: 820px) {
+        width: 60%;
+        height: 60%;
+        left: 50px;
+        bottom: 30px;
+      }
+
+      @media (min-width: 414px) {
+        height: 45px;
+        width: 45px;
+        left: 22%;
+        bottom: 18%;
+      }
+    }
+  }
+
+  .mobile-home-btn {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+
+    &.menu-active path {
+      stroke: var(--prime-color);
+    }
+
+    svg {
+      position: absolute;
+      left: 50%;
+      top: 22px;
+      transform: translateX(-50%);
+      animation: showHomeIco 2.5s ease-out;
+
+      @media (min-width: 414px) {
+        height: 50px;
+        width: 50px;
+        top: 0;
+      }
+    }
+  }
+
+  .right-outline {
+    position: absolute;
+    right: 0;
+    transform-origin: bottom right;
+    animation: rotateOutlineRight 1s ease-out;
+
+    @media (min-width: 414px) {
+      height: 130px;
+      bottom: 20%;
+      right: -12px;
+    }
+  }
+  .left-outline {
+    position: absolute;
+    left: 0;
+    transform-origin: bottom left;
+    animation: rotateOutlineLeft 1s ease-out;
+
+    @media (min-width: 414px) {
+      height: 130px;
+      bottom: 20%;
+      left: -12px;
+    }
+  }
+
+  .left-line {
+    position: absolute;
+    bottom: 15px;
+    transform-origin: bottom left;
+    animation: rotateOutlineLeft 1s ease-out;
+    transition: all 0.3s ease-in;
+
+    @media (min-width: 414px) {
+      height: 200px;
+      bottom: 35%;
+    }
+
+    &.rotate {
+      transform: rotate(40deg);
+      opacity: 0;
+      z-index: -10;
+    }
+  }
+
+  .right-line {
+    position: absolute;
+    bottom: 15px;
+    right: 0;
+    transform-origin: bottom right;
+    animation: rotateOutlineRight 1s ease-out;
+    transition: all 0.3s ease-in;
+
+    @media (min-width: 414px) {
+      height: 200px;
+      bottom: 35%;
+    }
+
+    &.rotate {
+      transform: rotate(-40deg);
+      opacity: 0;
+      z-index: -10;
+    }
+  }
+
+  .mobile-right-btn {
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    width: 130px;
+    height: 80%;
+    background-image: url("../../media/mobile-right-btn.png");
+    background-position: right;
+    background-repeat: no-repeat;
+    background-size: contain;
+
+    animation: showMobRightBtn 1s ease-out;
+    z-index: 1;
+
+    @media (min-width: 414px) {
+      width: 150px;
+      height: 100%;
+      background-size: cover;
+      background-position: left;
+    }
+
+    &.menu-active path {
+      fill: var(--prime-color);
+    }
+
+    svg {
+      position: absolute;
+      right: 25px;
+      bottom: 15px;
+      animation: showIco 2s ease-out;
+
+      @media (min-width: 414px) {
+        height: 50px;
+        width: 50px;
+        right: 20%;
+        bottom: 16%;
+      }
+    }
+  }
+}
+
+@keyframes showMobLeftBtn {
+  0% {
+    opacity: 0;
+    transform: translate(-20%, 50%);
+  }
+
+  100% {
+    opacity: 1;
+    transform: translate(0, 0);
+  }
+}
+
+@keyframes showMobRightBtn {
+  0% {
+    opacity: 0;
+    transform: translate(20%, 50%);
+  }
+
+  100% {
+    opacity: 1;
+    transform: translate(0, 0);
+  }
+}
+
+@keyframes showIco {
+  0% {
+    opacity: 0;
+  }
+  60% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+@keyframes showHomeIco {
+  0% {
+    transform: translate(-50%, 50%);
+    opacity: 0;
+  }
+  80% {
+    transform: translate(-50%, 50%);
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+    transform: translate(-50%, 0);
+  }
+}
+
+@keyframes rotateOutlineLeft {
+  0% {
+    transform: rotate(40deg);
+    opacity: 0;
+  }
+  30% {
+    transform: rotate(40deg);
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+    transform: rotate(0);
+  }
+}
+
+@keyframes rotateOutlineRight {
+  0% {
+    transform: rotate(-40deg);
+    opacity: 0;
+  }
+  30% {
+    transform: rotate(-40deg);
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+    transform: rotate(0);
+  }
+}

@@ -1,0 +1,18 @@
+.love-gallery {
+  .love__1 {
+    background-image: url("../../media/galleries/photo/love/thumb/1.jpg");
+  }
+  .love__2 {
+    background-image: url("../../media/galleries/photo/love/thumb/1.jpg");
+  }
+  .love__3 {
+    background-image: url("../../media/galleries/photo/love/thumb/1.jpg");
+  }
+  .love__4 {
+    background-image: url("../../media/galleries/photo/love/thumb/1.jpg");
+  }
+
+  &.hidden {
+    display: none;
+  }
+}

@@ -1,0 +1,22 @@
+.main-section {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  flex: 1 0 auto;
+  align-items: center;
+  transition: all 1s cubic-bezier(0.7, 0.05, 0.43, 0.74);
+  transform: translate(-100%);
+
+  @media (max-width: 973px) {
+    & {
+      display: none;
+    }
+  }
+
+  &.photo {
+    transform: translateX(-200%);
+  }
+  &.web {
+    transform: translateX(0);
+  }
+}
